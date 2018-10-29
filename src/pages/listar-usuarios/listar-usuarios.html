@@ -1,0 +1,50 @@
+<!--
+  Generated template for the ListarUsuariosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Listar Usuarios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Id
+      </ion-col>
+      <ion-col>
+        Nombre
+      </ion-col>
+      <ion-col>
+        Apellido
+      </ion-col>
+      <ion-col>
+        Cargo
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list *ngFor="let user of users">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        {{user.id}}
+      </ion-col>
+      <ion-col>
+        {{user.nombre}}
+      </ion-col>
+      <ion-col>
+        {{user.apellido}}
+      </ion-col>
+      <ion-col>
+        {{user.cargo}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </ion-list>
+</ion-content>

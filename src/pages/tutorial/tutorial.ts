@@ -32,26 +32,32 @@ export class TutorialPage {
         console.log('Loaded values', values);
         this.slides = [
           {
-            title: values.TUTORIAL_SLIDE1_TITLE,
-            description: values.TUTORIAL_SLIDE1_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-1.png',
+            title: "Bienvenido a SG-SST App",
+            description: "<b>SG-SST App</b> le permite a su organización realizar una mejor gestión sobre los incidentes de seguridad.",
+            image: 'assets/img/img1.jpg',
           },
           {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-2.png',
+            title: "¿Qué es el SG-SST?",
+            description: "Consiste en el desarrollo de un proceso lógico y por etapas, basado en la mejora continua, lo cual incluye la política, la organización, la planificación, la aplicación, la evaluación, la auditoría y las acciones de mejora con el objetivo de anticipar, reconocer, evaluar y controlar los riesgos que puedan afectar la seguridad y la salud en los espacios laborales.",
+            image: 'assets/img/img4.gif',
           },
           {
-            title: values.TUTORIAL_SLIDE3_TITLE,
-            description: values.TUTORIAL_SLIDE3_DESCRIPTION,
-            image: 'assets/img/ica-slidebox-img-3.png',
+            title: "Funciones Adicionales",
+            description: `<b>SG-SST App</b> Incorpora los siguientes módulos: 
+                          <br>
+                          <ul>
+                            <li>Reporte de Condiciones</li> 
+                            <li>Inspecciones Planeadas</li> 
+                            <li>Elementos de Protección Personal</li>
+                          </ul>`,
+            image: 'assets/img/img3.jpg',
           }
         ];
       });
   }
 
   startApp() {
-    this.navCtrl.setRoot('WelcomePage', {}, {
+    this.navCtrl.setRoot('LoginPage', {}, {
       animate: true,
       direction: 'forward'
     });

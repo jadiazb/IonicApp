@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Reportar Condiciones</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+          Seleccione una opción:
+        </ion-card-header>
+      
+        <ion-list>
+          <button ion-item (click)="openIncidenteTrabajo()">
+            <ion-icon name="body" item-start></ion-icon>
+            Incidente de Trabajo
+          </button>
+      
+          <button ion-item (click)="openActoInseguro()">
+            <ion-icon name="hand" item-start></ion-icon>
+            Acto Inseguro
+          </button>
+      
+          <button ion-item (click)="openCondicionTrabajo()">
+            <ion-icon name="construct" item-start></ion-icon>
+            Condición de Trabajo
+          </button>
+      
+          <button ion-item (click)="openCondicionSalud()">
+            <ion-icon name="medkit" item-start></ion-icon>
+            Condición de Salud
+          </button>    
+        </ion-list>
+      </ion-card>
+
+</ion-content>

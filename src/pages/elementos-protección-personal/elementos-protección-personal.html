@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Elementos de Protección Personal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let element of elements">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="{{element.imagen}}">
+        <!-- <img src="assets/img/elementos/casco.jpg"> -->
+      </ion-thumbnail>
+      <h2>{{element.id}}</h2>
+      <p>{{element.nombre}}</p>
+      <p>{{element.descripcion}}</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="checkmark-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Crear Usuario</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="close-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+
+    <ion-list-header>
+      Información Básica:
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Nombre: </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Área: </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Contraseña: </ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <br><br>
+    <ion-list-header>
+      Verificar Permisos:
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Crear Usuarios</ion-label>
+      <ion-checkbox color="dark" checked="false"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Editar Usuarios</ion-label>
+      <ion-checkbox color="dark" checked="false"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Eliminar Usuarios</ion-label>
+      <ion-checkbox color="dark" checked="false"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
